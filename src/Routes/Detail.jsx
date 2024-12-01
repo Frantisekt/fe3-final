@@ -20,7 +20,7 @@ const Detail = () => {
     <div className={state.theme === 'dark' ? 'dark' : ''}>
       <h1>Detail Dentist {id}</h1>
       {dentist && (
-        <div>
+        <div className='dentistInfo'>
           <img class="profile-img" src="../images/doctor.jpg"/>
           <h2>{dentist.name}</h2>
           <p>Email: {dentist.email}</p>

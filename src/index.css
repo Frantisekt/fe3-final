@@ -78,6 +78,10 @@ footer p{
   padding-top: 0.7rem;
 }
 
+.formulario p, h2 {
+  margin: 40px;
+}
+
 form{
   display: flex;
   flex-direction: column;
@@ -97,7 +101,7 @@ form input {
 
 form button {
   padding: 10px;
-  background-color: #007bff;
+  background-color: #032447;
   color: white;
   border: none;
   border-radius: 4px;
@@ -106,13 +110,27 @@ form button {
 }
 
 form button:hover {
-  background-color: #0056b3;
+  background-color: #496077;
+}
+
+
+
+.contactButton {
+  margin: 0 0 40px 40px;
+}
+
+.dark form {
+  background-color: #081c31;
+}
+
+.dark .formulario{
+  background-color: #413971;
 }
 
 .dark form input {
   background-color: #333;
   color: white;
-  border-color: #666;
+  border-color: #1b0554;
 }
 
 .dark form button {
@@ -184,6 +202,9 @@ tr:nth-child(even) {
   color: white;
 }
 
+.dentistInfo {
+  margin: 0 0 0 40px;
+}
 
 
 

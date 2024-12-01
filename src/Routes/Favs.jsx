@@ -13,12 +13,19 @@ const Favs = () => {
     setFavs(storedFavs);
   }, []);
 
+
+  const removeFav = (id) => {
+    const updatedFavs = favs.filter(dentist => dentist.id !== id);
+    setFavs(updatedFavs);
+    localStorage.setItem('favs', JSON.stringify(updatedFavs));
+  }
+
   return (
     <div className={state.theme === 'dark' ? 'dark' : ''}>
-      <h1>Dentists Favs</h1>
+      <h1>Dentistas Destacados</h1>
       <div className="card-grid">
         {favs.length === 0 ? (
-          <p>No hay dentistas favoritos</p>
+          <p>No hay dentistas destacados</p>
         ) : (
           favs.map(dentist => (
             <Card
@@ -27,6 +34,7 @@ const Favs = () => {
               username={dentist.username}
               id={dentist.id}
               image="..\images\doctor.jpg"
+              onRemoveFav={removeFav}
             />
           ))
         )}

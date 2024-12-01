@@ -13,10 +13,12 @@ const Contact = () => {
 
   return (
     <div className={state.theme === 'dark' ? 'dark' : ''}>
-      <h2>¿Quieres saber más?</h2>
-      <p>Envíanos tus preguntas y nos pondremos en contacto contigo</p>
-      <button onClick={handleShowForm}>Contacto</button>
-      {showForm && <Form/>}
+      <div className='formulario'>
+        <h2>¿Quieres saber más?</h2>
+        <p>Envíanos tus preguntas y nos pondremos en contacto contigo</p>
+        <button className='contactButton' onClick={handleShowForm}>Contacto</button>
+        {showForm && <Form/>}
+      </div>
     </div>
   )
 }
