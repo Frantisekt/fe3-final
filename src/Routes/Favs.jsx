@@ -26,6 +26,7 @@ const Favs = () => {
               name={dentist.name}
               username={dentist.username}
               id={dentist.id}
+              image="..\images\doctor.jpg"
             />
           ))
         )}

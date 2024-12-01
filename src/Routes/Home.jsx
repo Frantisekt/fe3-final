@@ -18,6 +18,7 @@ const Home = () => {
             name={user.name}
             username={user.username}
             id={user.id}
+            image="..\images\doctor.jpg"
           />
         ))}
       </div>

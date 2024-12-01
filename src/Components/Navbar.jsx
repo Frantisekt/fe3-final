@@ -12,8 +12,10 @@ const Navbar = () => {
 
   return (
     <nav className={state.theme === 'dark' ? 'navbar dark' : 'navbar'}>
+      
       <Link to="/">
-        <h4>Home</h4>
+        <img src="public\DH.ico" title='Home' alt="Home" style={{ marginRight: '10px' }} />
+        {/* <h4>Home</h4> */}
       </Link>
       <Link to="/contacto">
         <h4>Contacto</h4>
@@ -22,8 +24,8 @@ const Navbar = () => {
         <h4>Favoritos</h4>
       </Link>
       
-      <button onClick={toggleTheme}>
-        Change theme {state.theme === 'light' ? '🌙' : '☀️'}
+      <button onClick={toggleTheme} style={{ backgroundColor: '#313149', color: 'white', border: 'none', borderRadius: '5px', padding: '10px 20px', cursor: 'pointer' }}>
+        Modo {state.theme === 'light' ? '🌙' : '☀️'}
       </button>
     </nav>
   );

@@ -18,13 +18,15 @@ const Detail = () => {
 
   return (
     <div className={state.theme === 'dark' ? 'dark' : ''}>
-      <h1>Detail Dentist id {id}</h1>
+      <h1>Detail Dentist {id}</h1>
       {dentist && (
         <div>
+          <img class="profile-img" src="../images/doctor.jpg"/>
           <h2>{dentist.name}</h2>
           <p>Email: {dentist.email}</p>
           <p>Teléfono: {dentist.phone}</p>
           <p>Sitio web: {dentist.website}</p>
+
         </div>
       )}
     </div>
