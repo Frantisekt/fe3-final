@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useContext } from 'react';
 import { ContextGlobal } from './utils/global.context';
 
@@ -16,6 +16,9 @@ const Navbar = () => {
       <Link to="/">
         <img src="public\DH.ico" title='Home' alt="Home" style={{ marginRight: '10px' }} />
         {/* <h4>Home</h4> */}
+      </Link>
+      <Link to="/">
+        <h4>Home</h4>
       </Link>
       <Link to="/contacto">
         <h4>Contacto</h4>
