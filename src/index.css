@@ -82,6 +82,8 @@ footer p{
   margin: 40px;
 }
 
+
+
 form{
   display: flex;
   flex-direction: column;
@@ -205,8 +207,6 @@ tr:nth-child(even) {
 .dentistInfo {
   margin: 0 0 0 40px;
 }
-
-
 
 
 
