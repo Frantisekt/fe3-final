@@ -67,7 +67,7 @@ footer {
 }
 
 footer img{
-  width: 200px;
+  width: 250px;
   margin: 0;
 }
 
@@ -239,6 +239,6 @@ nav a:hover {
 }
 
 .icon {
-  width: 25px; /* Cambia el tamaño de los íconos */
+  width: 20px; /* Cambia el tamaño de los íconos */
   margin: 0 10px; /* Añade un margen entre los íconos */
 }
