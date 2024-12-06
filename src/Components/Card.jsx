@@ -28,7 +28,7 @@ const Card = ({ name, username, id, image, onRemoveFav }) => {
         <p>{username}</p>
         
       </Link>
-      <button onClick={addFav} className="favButton"><img src="/favicon.ico" title='Add to Favorites'style={{ width: '20px', height: '20px' }} /></button>
+      <button onClick={addFav} className="favButton" title='Add to Favorites'><img src="/favicon.ico" style={{ width: '20px', height: '20px' }} /></button>
       {location.pathname === '/favs' && (
      <button onClick={removeFav} className="removeButton"><img src="/images/trash.png" title='Remove' style={{ width: '20px', height: '20px' }} /> </button>
       )}
