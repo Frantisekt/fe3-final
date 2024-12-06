@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className={state.theme === 'dark' ? 'navbar dark' : 'navbar'}>
       
       <Link to="/">
-        <img src="public\DH.ico" title='Home' alt="Home" style={{ marginRight: '10px' }} />
+        <img src="/DH.ico" title='Home' alt="Home" style={{ marginRight: '10px' }} />
         {/* <h4>Home</h4> */}
       </Link>
       <Link to="/">

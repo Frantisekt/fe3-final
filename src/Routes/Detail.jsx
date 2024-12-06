@@ -21,7 +21,7 @@ const Detail = () => {
       <h1>Detail Dentist {id}</h1>
       {dentist && (
         <div className='dentistInfo'>
-          <img class="profile-img" src="../images/doctor.jpg"/>
+          <img className="profile-img" src="/images/doctor.jpg"/>
           <h2>{dentist.name}</h2>
           <p>Email: {dentist.email}</p>
           <p>Teléfono: {dentist.phone}</p>
